@@ -85,8 +85,9 @@ do{
 	// Write the contents back to the file
 	file_put_contents($file, $cTuple);
 	?>
-	<textarea><?= $cTuple; ?></textarea>
-	<a href="Öutput.csv">Download Output.csv</a>
+	<textarea width="400" height="250"><?= $cTuple; ?></textarea>
+	<br />
+	<a href="Output.csv">Download Output.csv</a>
 	<?php
 	
 }while(0);
