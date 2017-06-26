@@ -81,7 +81,7 @@ do{
 	$cTuple = rtrim($cTuple, ',');
 	$cTuple .= ']';
 
-	$file = 'people.txt';
+	$file = 'Output.txt';
 	// Write the contents back to the file
 	file_put_contents($file, $cTuple);
 	?>
