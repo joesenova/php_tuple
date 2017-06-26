@@ -88,6 +88,8 @@ do{
 	<textarea style="width: 600px; height: 100px;"><?= $cTuple; ?></textarea>
 	<br />
 	<a href="Output.csv">Download Output.csv</a>
+	<br />
+	<a href="upload_loan_file.php">Upload another file!</a>
 	<?php
 	
 }while(0);
