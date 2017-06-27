@@ -1,1 +1,0 @@
-[{ "Network" : ('Network 1',3, 5899),('Network 2',3, 8540),('Network 3',2, 4012),('Network 4',1, 50000)},{ "Product" : ('Loan Product 1',3, 7793),('Loan Product 2',3, 6983),('Loan Product 3',2, 3675),('Personal Loan 1',1, 50000)},{ "Month" : (Mar,5, 57304),(Apr,4, 11147)}]
