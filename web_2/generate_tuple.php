@@ -16,7 +16,7 @@ ini_set('max_execution_time', 0);
 $aError = array();// Define empty error array
 
 //Set all the Requested parameters into varuables
-extract($_REQUEST); //Converts the URL params to PHP varuables
+extract($_POST); //Converts the URL params to PHP varuables
 
 //Include all classes
 include 'tuple.class.php';
@@ -38,7 +38,8 @@ do{
 			break;
 		}
 	}else{
-		$cfileName = 'Loans.csv';
+		$aError[] = "File parse error / No file uploaded";
+		break;
 	}
 
 	$oCsv = new CSV();
@@ -65,7 +66,7 @@ do{
 
 	$cTuple = json_encode($oTuple);
 	
-	$file = 'Output.txt';
+	$file = 'Output.csv';
 	// Write the contents back to the file
 	file_put_contents($file, $cTuple);
 

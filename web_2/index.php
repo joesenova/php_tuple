@@ -21,6 +21,10 @@ ini_set('max_execution_time', 0);
 			<label for="file">File:</label>
 			<input type="file" name="file"  />
 		</div>
+		<div class="form-group">
+			<label for="debug">Debug?</label>
+			<input type="checkbox" name="lDebug" value="1">
+		</div>
 		<button type="submit" class="btn btn-primary">Generate Tuple 1</button>
 	</form>
 </div>
