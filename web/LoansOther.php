@@ -69,17 +69,19 @@ do{
 	// 	print_r($aOut);
 	// print '</pre>';
 
-	$cTuple = '[';
-	foreach($aOut as $key => $aValue){
-		$cTuple .= '{ "'.$key . '" : ';
-		foreach($aValue as $cKey => $aDet){
-			$cTuple .= '('.$cKey.','.$aDet['loan_count'].', '.$aDet['loan_total'].'),';
-		}
-		$cTuple = rtrim($cTuple, ',');
-		$cTuple .= '},';
-	}
-	$cTuple = rtrim($cTuple, ',');
-	$cTuple .= ']';
+	// $cTuple = '[';
+	// foreach($aOut as $key => $aValue){
+	// 	$cTuple .= '{ "'.$key . '" : ';
+	// 	foreach($aValue as $cKey => $aDet){
+	// 		$cTuple .= '('.$cKey.','.$aDet['loan_count'].', '.$aDet['loan_total'].'),';
+	// 	}
+	// 	$cTuple = rtrim($cTuple, ',');
+	// 	$cTuple .= '},';
+	// }
+	// $cTuple = rtrim($cTuple, ',');
+	// $cTuple .= ']';
+
+	$cTuple = json_encode($aOut);
 
 	$file = 'Output.txt';
 	// Write the contents back to the file
