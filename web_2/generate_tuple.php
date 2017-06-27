@@ -51,21 +51,34 @@ do{
 	}
 
 	if($lDebug){
+		echo '<b>File Object :: </b>';
+		echo '<br />';
 		echo '<pre>';
 			print_r($aFile);
 		echo '</pre>';
+		echo '<hr />';
 	}
 
 	$oDetails = new CalculateDetails();
 	$oTuple = $oDetails->getCalculatedTuple($aFile);
 
 	if($lDebug){
+		echo '<b>Tuple Class Object :: </b>';
+		echo '<br />';
 		print_r($oTuple);
-		break;
+		echo '<hr />';
 	}
 
 	$cTuple = json_encode($oTuple);
 	
+	if($lDebug){
+		echo '<b>Json encoded Tuple Class Object :: </b>';
+		echo '<br />';
+		print $cTuple;
+		echo '<hr />';
+		break;
+	}
+
 	$file = 'Output.csv';
 	// Write the contents back to the file
 	file_put_contents($file, $cTuple);
