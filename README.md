@@ -3,7 +3,7 @@
 This project will tuple coloums, (Network, Product, Month), of a uploaded Loans file by month, network and loa type.
 Visit any of the links below and upload the file received from {Company X} in a .csv format.
 
-[php_tuple POC](https://phptuple.herokuapp.com/web/upload_loan_file.php)   OR  
+[php_tuple POC](https://phptuple.herokuapp.com/web/upload_loan_file.php)     
 [php_tuple Final](https://phptuple.herokuapp.com/web_2/)
 
 When in Debug mode the following will be displayed:
